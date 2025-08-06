@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import gdown
 import pickle
 from PIL import Image
 import numpy as np
@@ -10,6 +11,9 @@ from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
 from sklearn.neighbors import NearestNeighbors
 from numpy.linalg import norm
 
+embedding_file_id = '1fJiW2zg2SPAGZVA5xlyWnGKv3a10UaTy'
+if not os.path.exists("embeddings.pkl"):
+    gdown.download(f'https://drive.google.com/uc?id={embedding_file_id}', 'embeddings.pkl', quiet=False)
 
 feature_list = np.array(pickle.load(open('embeddings.pkl','rb')))
 filenames = pickle.load(open('filenames.pkl','rb'))
