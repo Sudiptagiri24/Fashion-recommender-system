@@ -3,9 +3,9 @@ tf_macos_env/
 .venv/
 env/
 venv/
-
-# Uploads (user files during app usage)
-uploads/
+.idea/
+images/
+sample/
 
 # Pickle files (too large for GitHub)
 embeddings.pkl
