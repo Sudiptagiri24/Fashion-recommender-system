@@ -9,7 +9,6 @@ uploads/
 
 # Pickle files (too large for GitHub)
 embeddings.pkl
-filenames.pkl
 
 # Mac system files
 .DS_Store
