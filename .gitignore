@@ -1,0 +1,26 @@
+# Virtual environments
+tf_macos_env/
+.venv/
+env/
+venv/
+
+# Uploads (user files during app usage)
+uploads/
+
+# Pickle files (too large for GitHub)
+embeddings.pkl
+filenames.pkl
+
+# Mac system files
+.DS_Store
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# VSCode settings
+.vscode/
